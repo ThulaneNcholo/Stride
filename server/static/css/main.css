@@ -1,0 +1,244 @@
+:root {
+  --primary-color: #012939;
+  /* #0d333f */
+  --secondary-color: #ed9f01;
+  --secondary-background: #f5f5f7;
+  --text-color: #f2f1f3;
+  --secondary-text: #bfbac4;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(22, 22, 22);
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 99px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section_spacing {
+  margin-top: 100px;
+}
+
+.section_headings {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 50px;
+}
+
+/* Hero style  */
+.hero_container {
+  background-color: var(--primary-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero_heading {
+  /* font-family: "Plus Jakarta Sans", sans-serif; */
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 70px;
+}
+
+.hero_secondary_color {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 70px;
+}
+
+.hero_image {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero_Subheading {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.hero_btn {
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* The Problem style  */
+mark {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
+  background-color: #ed9e01bc;
+  color: var(--primary-color);
+}
+
+.problem_titles {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.problem_card {
+  border-radius: 10px;
+  border-color: var(--primary-color);
+}
+
+/* Banner style  */
+.banner_background {
+  background-color: var(--primary-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.banner_title {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 50px;
+}
+
+.banner_title_secondary {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 50px;
+}
+
+.banner_image {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* solution style  */
+.solution_text {
+  font-size: 17px;
+  color: var(--primary-color);
+}
+
+.solution_card {
+  border-radius: 10px;
+  border: 1px var(--primary-color) solid;
+  border-color: var(--primary-color) !important;
+}
+
+.solution_icon {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+/* Join us  */
+.join_image {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.join_icon {
+  color: var(--primary-color);
+}
+
+/* call to action style  */
+.action_title {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.action_span {
+  color: var(--secondary-color) !important;
+}
+
+.action_apply_title {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.form_btn {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Footer style  */
+.footer {
+  background-color: var(--secondary-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer_title {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 70px;
+}
+
+.footer_light_title {
+  color: var(--text-color);
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+}
+
+.footer_text {
+  color: var(--primary-color);
+}
+
+/* Navbar style */
+.navbar_container {
+  background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+  color: var(--secondary-color) !important;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  body::before {
+    display: block;
+    content: "";
+    height: 83px;
+  }
+
+  .section_headings {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 30px;
+  }
+
+  .hero_image {
+    height: 400px;
+  }
+}

@@ -1,0 +1,476 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap-icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <!-- Inter Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Momo+Trust+Display  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main css  -->
+    <link rel="stylesheet" href="{% static '/css/main.css' %}" />
+    <!-- Secondary_css css  -->
+    <link rel="stylesheet" href="{% static '/css/secondary_css.css' %}" />
+
+    <style>
+      .form_background {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('{% static "images/image_03.png" %}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    </style>
+
+    <title>Stride</title>
+  </head>
+  <body>
+    <!-- ======= Navbar  ======= -->
+    <div>{% include 'partials/navbar.html' %}</div>
+
+    <!-- =======  Hero ======= -->
+    <section class="hero_container" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7 mb-5">
+            <h1 class="hero_titles">
+              We’re building the future of service work
+            </h1>
+            <h1 class="hero_titles secondary_hero_titles mb-4">
+              starting with you.
+            </h1>
+            <p class="hero_Subheading mb-5">
+              A smarter, simpler way for service businesses to manage clients,
+              quotes, and jobs , all in one place. Join early and help shape the
+              platform built for how real businesses actually work.
+            </p>
+            <a href="#join">
+              <button
+                class="btn btn-light hero_btn d-flex align-items-center gap-2"
+              >
+                Join the Early Access Program <i class="bi bi-arrow-right"></i>
+              </button>
+            </a>
+          </div>
+          <div class="col-12 col-lg-5 mb-5">
+            <img
+              class="hero_image"
+              src="{% static '/images/stride_hero.png' %}"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======  Why we building it ======= -->
+    <section class="container section_spacing" id="business">
+      <center>
+        <h1 class="section_headings mb-5 d-none d-md-block">
+          <mark>Why we’re building this</mark>
+        </h1>
+
+        <h1 class="section_headings mb-1 d-md-none">
+          <mark>Why we’re</mark>
+        </h1>
+        <h1 class="section_headings mb-5 d-md-none">
+          <mark>building this</mark>
+        </h1>
+
+        <p>
+          Every day, service providers lose hours managing admin instead of
+          growing their business. We believe technology should work for you, not
+          the other way around.
+        </p>
+        <p>
+          That’s why we’re creating a tool that simplifies your workflow , so
+          you can focus on what really matters: getting the job done.
+        </p>
+      </center>
+    </section>
+
+    <!-- ======= what it does ======= -->
+    <section class="container section_spacing" id="features">
+      <center>
+        <h1 class="section_headings mb-5">
+          <mark>What It Does</mark>
+        </h1>
+      </center>
+
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="problem_card h-100 p-3 border">
+            <h4 class="problem_titles">Quotes & Invoices</h4>
+            <p>
+              Create and send professional quotes, convert them to invoices
+              instantly.
+            </p>
+          </div>
+        </div>
+        <!-- end col  -->
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="problem_card h-100 p-3 border">
+            <h4 class="problem_titles">Clients & Jobs</h4>
+            <p>
+              Manage your customers, appointments, and work orders effortlessly.
+            </p>
+          </div>
+        </div>
+        <!-- end col  -->
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="problem_card h-100 p-3 border">
+            <h4 class="problem_titles">Team Management</h4>
+            <p>
+              Assign tasks, track progress, and stay aligned with your crew.
+            </p>
+          </div>
+        </div>
+        <!-- end col  -->
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="problem_card h-100 p-3 border">
+            <h4 class="problem_titles">Reminders & Notes</h4>
+            <p>Never miss a follow-up or client update again.</p>
+          </div>
+        </div>
+        <!-- end col  -->
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="problem_card h-100 p-3 border">
+            <h4 class="problem_titles">Mobile-Ready</h4>
+            <p>Works right from your phone — no extra setup needed.</p>
+          </div>
+        </div>
+        <!-- end col  -->
+      </div>
+    </section>
+
+    <!-- ======= Early Partner Program ======= -->
+    <section class="blue_container section_spacing" id="partners">
+      <div class="container">
+        <center>
+          <h1 class="hero_titles mb-3">Early Partner Program</h1>
+          <p class="text-light mb-5">
+            Help shape what we’re building — and own it for life.
+          </p>
+          <h5 class="mb-5 yellow_title">
+            We’re teaming up with a small group of forward-thinking businesses
+            to shape this platform before launch.
+          </h5>
+        </center>
+
+        <div class="row mb-5">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="light_card h-100 p-3 border">
+              <p class="text-light mb-0">Get lifetime free access</p>
+            </div>
+          </div>
+          <!-- end card  -->
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="light_card h-100 p-3 border">
+              <p class="text-light mb-0">
+                Have direct input on features and design
+              </p>
+            </div>
+          </div>
+          <!-- end card  -->
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="light_card h-100 p-3 border">
+              <p class="text-light mb-0">
+                Be featured as one of the founding businesses when we launch
+                publicly
+              </p>
+            </div>
+          </div>
+          <!-- end card  -->
+        </div>
+
+        <center>
+          <a href="#join">
+            <button
+              class="btn btn-light hero_btn d-flex align-items-center gap-2 mb-4"
+            >
+              Join the Early Partner Program <i class="bi bi-arrow-right"></i>
+            </button>
+          </a>
+          <p class="text-light">
+            Spots are limited. Be part of the first group that defines how
+            modern service work runs.
+          </p>
+        </center>
+      </div>
+    </section>
+
+    <!-- ======= About ======= -->
+    <section class="container section_spacing" id="vision">
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-4">
+          <h1 class="section_headings">
+            <mark>Built in South Africa.</mark>
+          </h1>
+          <h1 class="section_headings">
+            <mark>Designed for the </mark>
+          </h1>
+          <h1 class="section_headings mb-4">
+            <mark>world.</mark>
+          </h1>
+          <p>
+            We’re <span class="fw-bold">GNT Technology</span> — a small team
+            building big tools for small businesses.
+          </p>
+          <p>
+            <span class="fw-bold">Our mission is simple:</span> make business
+            management effortless for the people who do the real work.
+          </p>
+          <p>
+            We believe the best software isn’t built in isolation , it’s built
+            with the people who use it every day.
+          </p>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+          <img
+            class="join_image"
+            src="{% static '/images/image_02.png' %}"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =======  Call to Action Form ======= -->
+    <section class="banner_background section_spacing" id="join">
+      <div class="container">
+        <center>
+          <h1 class="action_title mb-3">
+            Ready to Build the Solution
+            <span class="action_span">You've Been Waiting For?</span>
+          </h1>
+          <p class="text-light mb-5">
+            If you're a South African electrician, plumber, cleaner, or
+            contractor who's tired of the admin chaos, we want to hear from you.
+          </p>
+          <h4 class="action_apply_title mb-5">
+            Apply for the Founding Group in 2 minutes.
+          </h4>
+        </center>
+
+        <div class="row d-flex justify-content-center mb-4">
+          <div class="col-12 col-md-8 col-lg-5">
+            <form
+              id="contactForm"
+              action="https://formsubmit.co/thulanencholo95@gmail.com"
+              method="POST"
+            >
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Full Name"
+                  name="name"
+                  required
+                />
+                <label for="fullName">Full Name</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="businessName"
+                  placeholder="Business Name"
+                  name="business_name"
+                />
+                <label for="businessName">Business Name</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="serviceType"
+                  placeholder="Service Type"
+                  name="service_type"
+                />
+                <label for="serviceType">Service Type</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="whatsapp"
+                  placeholder="WhatsApp Number"
+                  name="whatsapp_number"
+                  pattern="[0-9]{10}"
+                />
+                <label for="whatsapp">WhatsApp Number</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                  name="email"
+                  required
+                />
+                <label for="email">Email address</label>
+              </div>
+
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="What is the single biggest headache in your daily admin?"
+                  id="message"
+                  style="height: 200px"
+                  name="message"
+                ></textarea>
+                <label for="message">
+                  What is the single biggest headache in your daily admin?
+                </label>
+              </div>
+
+              <button
+                class="btn btn-light form_btn border-0 mt-4"
+                type="submit"
+              >
+                Join Now
+              </button>
+
+              <!-- hidden fields -->
+              <input type="hidden" name="_captcha" value="false" />
+            </form>
+          </div>
+        </div>
+
+        <!-- success message (hidden by default) -->
+        <div
+          id="successMessage"
+          class="alert alert-success mt-3"
+          style="display: none"
+        >
+          ✅ Thank you! Your message has been sent successfully.
+        </div>
+      </div>
+    </section>
+
+    <!-- =======  Footer ======= -->
+    <section class="footer">
+      <div class="container">
+        <center>
+          <h1 class="footer_title">Stride.</h1>
+          <h1 class="footer_light_title">
+            Built in South Africa, for South Africa.
+          </h1>
+          <p class="footer_text">
+            We're a small team based right here, committed to solving real
+            problems for local service businesses.
+          </p>
+          <p class="fw-bold footer_text">
+            No spam. No fees. Just a real partnership.
+          </p>
+        </center>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          const offsetTop = target.offsetTop - 100; // 80 = your navbar height
+
+          window.scrollTo({
+            top: offsetTop,
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // collapse navlink
+      const navLinks = document.querySelectorAll(".nav-link");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          // Collapse the menu when a nav link is clicked
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false,
+          });
+          bsCollapse.hide();
+        });
+      });
+    </script>
+
+    <script>
+      const form = document.getElementById("contactForm");
+      const successMessage = document.getElementById("successMessage");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        // Send data to FormSubmit via fetch
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+        });
+
+        if (response.ok) {
+          form.reset();
+          successMessage.style.display = "block";
+          // hide the message after a few seconds (optional)
+          setTimeout(() => (successMessage.style.display = "none"), 5000);
+        } else {
+          alert("Oops! Something went wrong. Please try again.");
+        }
+      });
+    </script>
+  </body>
+</html>

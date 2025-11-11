@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #012939;
+  /* #0d333f */
+  --secondary-color: #ed9f01;
+  --secondary-background: #f5f5f7;
+  --text-color: #f2f1f3;
+  --secondary-text: #bfbac4;
+}
+
+/* Hero style  */
+.hero_titles {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 50px;
+}
+
+.secondary_hero_titles {
+  color: var(--secondary-color) !important;
+}
+
+.blue_container {
+  background-color: var(--primary-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.light_card {
+  border-radius: 10px;
+}
+
+.yellow_title {
+  color: var(--secondary-color);
+  font-family: "Momo Trust Display", sans-serif;
+}
+
+.menu_bar {
+  color: var(--text-color);
+  font-size: 25px;
+}
+
+@media screen and (max-width: 576px) {
+  .hero_titles {
+    font-size: 45px;
+  }
+}
