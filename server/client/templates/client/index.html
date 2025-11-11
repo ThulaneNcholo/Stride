@@ -293,11 +293,8 @@
 
         <div class="row d-flex justify-content-center mb-4">
           <div class="col-12 col-md-8 col-lg-5">
-            <form
-              id="contactForm"
-              action="https://formsubmit.co/thulanencholo95@gmail.com"
-              method="POST"
-            >
+            <form id="contactForm" method="POST">
+              {% csrf_token %}
               <div class="form-floating mb-3">
                 <input
                   type="text"
@@ -336,12 +333,12 @@
                 <input
                   type="tel"
                   class="form-control"
-                  id="whatsapp"
-                  placeholder="WhatsApp Number"
-                  name="whatsapp_number"
+                  id="contact"
+                  placeholder="Contact Number"
+                  name="contact_number"
                   pattern="[0-9]{10}"
                 />
-                <label for="whatsapp">WhatsApp Number</label>
+                <label for="contact">Contact Number</label>
               </div>
 
               <div class="form-floating mb-3">
@@ -370,10 +367,19 @@
               </div>
 
               <button
-                class="btn btn-light form_btn border-0 mt-4"
+                onclick="LoadingSpinner()"
+                class="btn btn-light form_btn border-0 mt-4 d-flex justify-content-center d-flex align-items-center gap-2"
                 type="submit"
               >
                 Join Now
+                <div
+                  id="loading_spinner"
+                  class="spinner-border text-dark"
+                  role="status"
+                  style="display: none"
+                >
+                  <span class="visually-hidden">Loading...</span>
+                </div>
               </button>
 
               <!-- hidden fields -->
@@ -471,6 +477,12 @@
           alert("Oops! Something went wrong. Please try again.");
         }
       });
+    </script>
+
+    <script>
+      function LoadingSpinner() {
+        document.getElementById("loading_spinner").style.display = "block";
+      }
     </script>
   </body>
 </html>
